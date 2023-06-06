@@ -1,4 +1,8 @@
-export default function makeCourse({name, creditPoints, yearCommenced}) {
+export default function makeCourse({
+    name, 
+    creditPoints, 
+    yearCommenced
+}) {
     if(!name) {
         throw new Error('Please enter a name.')
     }
