@@ -1,4 +1,4 @@
-const { createSubject } = require('../../models/index.js')
+import makeSubject from '../entities/index.js'
 
 describe('Add Subject', () => {
     test('must have a valid id', () => {
@@ -9,7 +9,7 @@ describe('Add Subject', () => {
             yearStarted: 2022
         }
 
-        expect(() => createSubject(data).toThrow('Please prvide a valid id.'))
+        expect(() => makeSubject(data).toThrow('Please prvide a valid id.'))
     })
     test('must have a valid name', () => {
         const data = {
@@ -19,7 +19,7 @@ describe('Add Subject', () => {
             yearStarted: 2022
         }
 
-        expect(() => createSubject(data).toThrow('Please prvide a valid name.'))
+        expect(() => makeSubject(data).toThrow('Please prvide a valid name.'))
     })
     test('must have a valid credit point', () => {
         const data = {
@@ -29,7 +29,7 @@ describe('Add Subject', () => {
             yearStarted: 2022
         }
 
-        expect(() => createSubject(data).toThrow('Please provide a valid credit value.'))
+        expect(() => makeSubject(data).toThrow('Please provide a valid credit value.'))
     })
     test('must have a valid starting year', () => {
         const data = {
@@ -39,6 +39,6 @@ describe('Add Subject', () => {
             yearStarted: undefined
         }
 
-        expect(() => createSubject(data).toThrow('Please provide a valid year when the subject started.'))
+        expect(() => makeSubject(data).toThrow('Please provide a valid year when the subject started.'))
     })
 })

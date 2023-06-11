@@ -1,4 +1,4 @@
-const app = require('./src/app.js')
+import app from './src/app.js'
 
 const port = 3000 | process.env.PORT
 const hostname = '127.0.0.1' | HOSTNAME
