@@ -1,9 +1,8 @@
-import makeSubject from '../entities/index.js'
+import { makeSubject } from './'
 
 describe('Add Subject', () => {
     test('must have a valid id', () => {
         const data = {
-            id: undefined,
             name: 'Data Structures',
             credits: 3,
             yearStarted: 2022
@@ -13,7 +12,6 @@ describe('Add Subject', () => {
     })
     test('must have a valid name', () => {
         const data = {
-            id: 1,
             name: undefined,
             credits: 3,
             yearStarted: 2022
@@ -23,7 +21,6 @@ describe('Add Subject', () => {
     })
     test('must have a valid credit point', () => {
         const data = {
-            id: 1,
             name: 'Data Structures',
             credits: undefined,
             yearStarted: 2022
@@ -33,7 +30,6 @@ describe('Add Subject', () => {
     })
     test('must have a valid starting year', () => {
         const data = {
-            id: 1,
             name: 'Data Structures',
             credits: 3,
             yearStarted: undefined

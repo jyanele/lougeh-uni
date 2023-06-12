@@ -1,9 +1,8 @@
-import makeCourse from '../entities/index.js'
+import { makeCourse } from './'
 
 describe('Course', () => {
     test('must have a name', () => {
         const data = {
-            id: 1,
             name: undefined,
             requiredCreditPoints: 12,
             yearStarted: 2021
@@ -14,7 +13,6 @@ describe('Course', () => {
 
     test('must have a course identifier', () => {
         const data = {
-            id: undefined,
             name: 'Information Technology',
             requiredCreditPoints: 12,
             yearStarted: 2021
@@ -25,7 +23,6 @@ describe('Course', () => {
 
     test('must have credit points', () => {
         const data = {
-            id: 1,
             name: 'Information Technology',
             requiredCreditPoints: undefined,
             yearStarted: 2021
@@ -36,7 +33,6 @@ describe('Course', () => {
 
     test('must have year started', () => {
         const data = {
-            id: 1,
             name: 'Information Technology',
             requiredCreditPoints: undefined,
             yearStarted: undefined

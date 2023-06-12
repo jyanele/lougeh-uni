@@ -1,21 +1,9 @@
-export default function makeCourse({
-    name, 
-    creditPoints, 
-    yearCommenced
-}) {
-    if(!name) {
-        throw new Error('Please enter a name.')
-    }
-    if(!creditPoints || (creditPoints < 0)) {
-        throw new Error('Please enter a valid credit point.')
-    }
-    if(!yearCommenced){
-        throw new Error('Please enter year of commencement.')
-    }
+import express, { Router } from 'express'
 
-    return Object.freeze({
-        getName: () => name,
-        getCreditPoints: () => creditPoints,
-        getYearCommenced: () => yearCommenced
-    })
-}
+const courseRoute = express.Router()
+
+//TODO
+courseRoute.get('/', )
+courseRoute.get('/:id', )
+
+export default courseRoute
