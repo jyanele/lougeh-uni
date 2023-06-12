@@ -8,6 +8,9 @@ const makeCourse = createCourse({ Id })
 const makeSubject = createSubject({ Id })
 const makeStudent = createStudent({ Id })
 
+const entities = {
+    
+}
 module.exports = {
     makeCourse,
     makeSubject,
