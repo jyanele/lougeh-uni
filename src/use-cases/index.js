@@ -1,4 +1,6 @@
 import { 
     makeCourse,
-    makeSubject
+    makeSubject,
+    makeStudent
 } from '../entities/index.js'
+

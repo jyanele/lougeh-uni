@@ -6,3 +6,7 @@ const Id = Object.freeze({
 })
 
 export default Id
+export {
+    makeId,
+    isValid
+}

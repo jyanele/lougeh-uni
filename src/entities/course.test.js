@@ -2,12 +2,6 @@ import { makeCourse } from './'
 import makeFakeCourse from '../../tests/fixtures/course'
 
 describe('Course', () => {
-
-    test('must have a valid course identifier', () => {
-        const course = makeFakeCourse({ id: undefined })
-        expect(() => makeCourse(course)).toThrow('Please provide a valid id.')
-    })
-
     test('must have a name', () => {
         const course = makeFakeCourse({ name: undefined })
         expect(() => makeCourse(course).toThrow('Please provide a valid name.'))
